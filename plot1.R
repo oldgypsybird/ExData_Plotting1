@@ -21,12 +21,3 @@ consumption <- read_delim(paste(zip.path, "household_power_consumption.txt", sep
 png(file = "plot1.png")
 hist(consumption$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")   
 dev.off()
-
-
-
-
-
-png(file = plot2.png)
-
-plot(consumption$Global_active_power, type = "l", ylab = "Globacl Active Power (kilowatts)")
-axis(1)
